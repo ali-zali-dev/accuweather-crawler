@@ -4,6 +4,11 @@
   "description": "daily accuweather web crawler by node js",
   "author": "Ali Zali",
   "license": "MIT",
+  "scripts": {
+    "watch": "nodemon dist/index.js",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
   "devDependencies": {
     "typescript": "^4.5.2"
   },
