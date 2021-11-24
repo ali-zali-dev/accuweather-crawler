@@ -2,6 +2,8 @@ import async from 'async';
 import axios from 'axios';
 import camelCase from 'camelcase';
 import cheerio from 'cheerio';
+import { writeFile } from 'fs';
+import { join } from 'path';
 
 async function main() {
   const baseUrl = "https://www.accuweather.com";
@@ -37,11 +39,11 @@ async function main() {
         let dailyInformation = [];
         for (var i = 0; i < results.length; i++) {
           const $ = cheerio.load(results[i]);
-          const statsTable = $(".half-day-card.content-module");
+          const day = $(".half-day-card.content-module");
           let description: any = [];
           let feature: any = {};
 
-          statsTable.each(function () {
+          day.each(function () {
             $(this)
               .find(".phrase")
               .each(function (index, element) {
@@ -59,18 +61,21 @@ async function main() {
                 ] = featureValue;
               });
           });
+          const today = new Date();
+          const newDay = today.setDate(today.getDate() + i);
           dailyInformation.push({
-            date: i,
+            date: new Date(newDay).toDateString(),
             description: description[0],
             ...feature,
           });
-          // do something with results[i]
-          // half-day-card content-module
         }
-        console.log(dailyInformation);
-        //save file
+        writeFile(
+          join(__dirname, "../result/result.json"),
+          JSON.stringify(dailyInformation, null, 2),
+          () => {}
+        );
       } else {
-        // handle error here
+        console.log(err);
       }
     }
   );

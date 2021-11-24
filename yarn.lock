@@ -7,6 +7,11 @@
   "resolved" "https://registry.npmjs.org/@types/async/-/async-3.2.10.tgz"
   "version" "3.2.10"
 
+"@types/node@^16.11.10":
+  "integrity" "sha512-3aRnHa1KlOEEhJ6+CvyHKK5vE9BcLGjtUpwvqYLRvYNQKMfabu3BwfJaA/SLW8dxe28LsNDjtHwePTuzn3gmOA=="
+  "resolved" "https://registry.npmjs.org/@types/node/-/node-16.11.10.tgz"
+  "version" "16.11.10"
+
 "async@^3.2.2":
   "integrity" "sha512-H0E+qZaDEfx/FY4t7iLRv1W2fFI6+pyCeTw1uN20AQPiwqwM6ojPxHxdLv4z8hi2DtnW9BOckSspLucW7pIE5g=="
   "resolved" "https://registry.npmjs.org/async/-/async-3.2.2.tgz"
