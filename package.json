@@ -1,0 +1,16 @@
+{
+  "name": "accuweather-web-crawler",
+  "version": "1.0.0",
+  "description": "daily accuweather web crawler by node js",
+  "author": "Ali Zali",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "async": "^3.2.2",
+    "axios": "^0.24.0",
+    "camelcase": "^6.2.1",
+    "cheerio": "^1.0.0-rc.10"
+  }
+}
