@@ -16,7 +16,7 @@ async function main() {
   }
   const $ = cheerio.load(siteResponse.data);
   const days = $(".monthly-calendar");
-  let daysUrl: any = [];
+  let daysUrl: any[] = [];
   days.each(function () {
     $(this)
       .find("a")
@@ -39,9 +39,9 @@ async function main() {
         for (var i = 0; i < results.length; i++) {
           const $ = cheerio.load(results[i]);
           const day = $(".half-day-card.content-module");
-          let weatherDescription: any = [];
-          let weatherTemperature: any = [];
-          let weatherFeature: any = [];
+          let weatherDescription: string[] = [];
+          let weatherTemperature: string[] = [];
+          let weatherFeature: object[] = [];
           day.each(function () {
             $(this)
               .find(".temperature")
