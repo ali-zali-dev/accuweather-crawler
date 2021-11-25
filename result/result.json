@@ -3,6 +3,7 @@
     "date": "Thu Nov 25 2021",
     "day": {
       "description": "Sunshine mixing with clouds and chilly",
+      "temperature": "7",
       "maxUvIndex": "1 Low",
       "wind": "NNW 15 km/h",
       "windGusts": "20 km/h",
@@ -13,6 +14,7 @@
     },
     "night": {
       "description": "Partly cloudy; breezy late",
+      "temperature": "1",
       "wind": "W 17 km/h",
       "windGusts": "28 km/h",
       "probabilityOfPrecipitation": "18%",
@@ -25,6 +27,7 @@
     "date": "Fri Nov 26 2021",
     "day": {
       "description": "Cloudy with a little rain; breezy in the afternoon",
+      "temperature": "8",
       "maxUvIndex": "1 Low",
       "wind": "WSW 22 km/h",
       "windGusts": "33 km/h",
@@ -38,6 +41,7 @@
     },
     "night": {
       "description": "Mostly cloudy and increasingly windy with a shower",
+      "temperature": "2",
       "wind": "S 30 km/h",
       "windGusts": "56 km/h",
       "probabilityOfPrecipitation": "80%",
@@ -53,6 +57,7 @@
     "date": "Sat Nov 27 2021",
     "day": {
       "description": "Very windy; cloudy and chilly with a shower; strong winds can down trees and power lines",
+      "temperature": "5",
       "maxUvIndex": "1 Low",
       "wind": "NNW 41 km/h",
       "windGusts": "70 km/h",
@@ -66,6 +71,7 @@
     },
     "night": {
       "description": "Breezy in the evening; otherwise, clear to partly cloudy",
+      "temperature": "1",
       "wind": "NNW 24 km/h",
       "windGusts": "39 km/h",
       "probabilityOfPrecipitation": "5%",
@@ -78,6 +84,7 @@
     "date": "Sun Nov 28 2021",
     "day": {
       "description": "Partly sunny and chilly",
+      "temperature": "5",
       "maxUvIndex": "1 Low",
       "wind": "NW 19 km/h",
       "windGusts": "22 km/h",
@@ -88,6 +95,7 @@
     },
     "night": {
       "description": "Mostly cloudy",
+      "temperature": "1",
       "wind": "W 11 km/h",
       "windGusts": "15 km/h",
       "probabilityOfPrecipitation": "4%",
@@ -100,6 +108,7 @@
     "date": "Mon Nov 29 2021",
     "day": {
       "description": "Partly sunny",
+      "temperature": "7",
       "maxUvIndex": "1 Low",
       "wind": "SW 11 km/h",
       "windGusts": "15 km/h",
@@ -110,6 +119,7 @@
     },
     "night": {
       "description": "Overcast",
+      "temperature": "5",
       "wind": "WSW 11 km/h",
       "windGusts": "20 km/h",
       "probabilityOfPrecipitation": "25%",
@@ -122,6 +132,7 @@
     "date": "Tue Nov 30 2021",
     "day": {
       "description": "Cloudy",
+      "temperature": "10",
       "maxUvIndex": "0 Low",
       "wind": "WSW 17 km/h",
       "windGusts": "44 km/h",
@@ -132,6 +143,7 @@
     },
     "night": {
       "description": "Plenty of clouds with a shower late",
+      "temperature": "8",
       "wind": "W 20 km/h",
       "windGusts": "44 km/h",
       "probabilityOfPrecipitation": "60%",
@@ -147,6 +159,7 @@
     "date": "Wed Dec 01 2021",
     "day": {
       "description": "A little rain in the morning; otherwise, clouds giving way to sun",
+      "temperature": "10",
       "maxUvIndex": "1 Low",
       "wind": "WNW 20 km/h",
       "windGusts": "52 km/h",
@@ -160,6 +173,7 @@
     },
     "night": {
       "description": "Mainly clear",
+      "temperature": "5",
       "wind": "WNW 15 km/h",
       "windGusts": "43 km/h",
       "probabilityOfPrecipitation": "2%",
@@ -172,6 +186,7 @@
     "date": "Thu Dec 02 2021",
     "day": {
       "description": "Considerable cloudiness with brief showers",
+      "temperature": "8",
       "maxUvIndex": "1 Low",
       "wind": "WSW 17 km/h",
       "windGusts": "41 km/h",
@@ -185,6 +200,7 @@
     },
     "night": {
       "description": "Considerable clouds; a little evening rain followed by a passing shower late",
+      "temperature": "4",
       "wind": "WSW 15 km/h",
       "windGusts": "19 km/h",
       "probabilityOfPrecipitation": "67%",
@@ -200,6 +216,7 @@
     "date": "Fri Dec 03 2021",
     "day": {
       "description": "Intervals of clouds and sunshine",
+      "temperature": "8",
       "maxUvIndex": "1 Low",
       "wind": "W 15 km/h",
       "windGusts": "39 km/h",
@@ -210,6 +227,7 @@
     },
     "night": {
       "description": "Turning out clear",
+      "temperature": "5",
       "wind": "WNW 13 km/h",
       "windGusts": "33 km/h",
       "probabilityOfPrecipitation": "11%",
@@ -222,6 +240,7 @@
     "date": "Sat Dec 04 2021",
     "day": {
       "description": "Plenty of sunshine",
+      "temperature": "9",
       "maxUvIndex": "1 Low",
       "wind": "NNW 9 km/h",
       "windGusts": "28 km/h",
@@ -232,6 +251,7 @@
     },
     "night": {
       "description": "Increasing cloudiness",
+      "temperature": "6",
       "wind": "SW 6 km/h",
       "windGusts": "15 km/h",
       "probabilityOfPrecipitation": "1%",

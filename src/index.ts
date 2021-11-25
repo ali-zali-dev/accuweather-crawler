@@ -17,13 +17,12 @@ async function main() {
   const $ = cheerio.load(siteResponse.data);
   const days = $(".monthly-calendar");
   let daysUrl: any = [];
-
   days.each(function () {
     $(this)
       .find("a")
-      .each(function (index, element) {
-        if ($(element).attr("href")) {
-          daysUrl.push($(element).attr("href"));
+      .each(function () {
+        if ($(this).attr("href")) {
+          daysUrl.push($(this).attr("href"));
         }
       });
   });
@@ -38,28 +37,35 @@ async function main() {
       if (!err) {
         let dailyInformation = [];
         for (var i = 0; i < results.length; i++) {
-          console.log(i);
-
           const $ = cheerio.load(results[i]);
           const day = $(".half-day-card.content-module");
           let weatherDescription: any = [];
+          let weatherTemperature: any = [];
           let weatherFeature: any = [];
-
           day.each(function () {
             $(this)
+              .find(".temperature")
+              .each(function () {
+                if ($(this).text().indexOf("°") === 6) {
+                  weatherTemperature.push($(this).text().substr(4, 2));
+                } else {
+                  weatherTemperature.push($(this).text().substr(4, 1));
+                }
+              });
+            $(this)
               .find(".phrase")
-              .each(function (index, element) {
-                weatherDescription.push($(element).text());
+              .each(function () {
+                weatherDescription.push($(this).text());
               });
             $(this)
               .find(".panels")
-              .each(function (index, element) {
+              .each(function () {
                 let feature: any = {};
-                $(element)
+                $(this)
                   .find(".panel-item")
-                  .each(function (index, element) {
-                    const featuresText = $(element).text();
-                    const featureValue = $(element).children().text();
+                  .each(function () {
+                    const featuresText = $(this).text();
+                    const featureValue = $(this).children().text();
                     feature[
                       camelCase(
                         featuresText.substr(
@@ -76,8 +82,16 @@ async function main() {
           const newDay = today.setDate(today.getDate() + i);
           dailyInformation.push({
             date: new Date(newDay).toDateString(),
-            day: { description: weatherDescription[0], ...weatherFeature[0] },
-            night: { description: weatherDescription[1], ...weatherFeature[1] },
+            day: {
+              description: weatherDescription[0],
+              temperature: weatherTemperature[0],
+              ...weatherFeature[0],
+            },
+            night: {
+              description: weatherDescription[1],
+              temperature: weatherTemperature[1],
+              ...weatherFeature[1],
+            },
           });
         }
         writeFile(
