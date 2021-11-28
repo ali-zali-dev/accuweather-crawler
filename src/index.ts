@@ -5,6 +5,8 @@ import cheerio from 'cheerio';
 import { writeFile } from 'fs';
 import { join } from 'path';
 
+import test from './test';
+
 async function main() {
   const baseUrl = "https://www.accuweather.com";
   const url =
@@ -105,5 +107,5 @@ async function main() {
     }
   );
 }
-
-main();
+test();
+// main();
